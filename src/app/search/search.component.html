@@ -1,0 +1,13 @@
+<div class="container mb-3 mt-3">
+  <input
+    id="typeahead-basic"
+    type="text"
+    class="form-control"
+    [(ngModel)]="model"
+    [ngbTypeahead]="search"
+    [inputFormatter]="formatter"
+    placeholder="Start by typing a word or phrase..." />
+</div>
+<div class="container mb-3">
+  {{ model | json }}
+</div>
